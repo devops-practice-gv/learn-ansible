@@ -7,4 +7,14 @@
   tasks:
     - name: Print Name
       ansible.builtin.debug:
-        msg: URL is {{ URL_Play }} {{ Age }}
+        msg: URL Play is {{ URL_Play }} {{ Age }}
+    - name: task variable
+      ansible.builtin.debug:
+        msg: URL Task is {{ URL_Task }} {{ Age }}
+      vars:
+        - URL_Task: Task level Variable
+        - Age: 20
+
+
+#Play level variables cane be accessed by all the tasks and roles
+#Task level can be accessed only at task level
