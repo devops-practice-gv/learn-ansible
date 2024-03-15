@@ -6,5 +6,5 @@
 
   tasks:
     - name: Print Name
-      ansible,builtin.debug:
+      ansible.builtin.debug:
         msg: URL is {{ URL_Play }}
