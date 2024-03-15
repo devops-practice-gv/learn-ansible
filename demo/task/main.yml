@@ -4,4 +4,4 @@
 
 - name: Print Name
   ansible.builtin.debug:
-    msg: URL Role is {{ URL_Role }} {{ Age }}
+    msg: URL Role is {{ URL_Role }}
