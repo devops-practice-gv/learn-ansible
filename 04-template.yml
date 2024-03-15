@@ -10,4 +10,4 @@
     - name: Template example.config file
       ansible.builtin.template:
         src: example.conf
-        dest: /temp/example-copy.conf
+        dest: /temp/example-template.conf
