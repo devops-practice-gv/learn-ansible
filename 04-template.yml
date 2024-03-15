@@ -1,5 +1,6 @@
 - name: Demo of template files
   hosts: localhost
+  become: true
   tasks:
     - name: Copy example.config file
       ansible.builtin.copy:
