@@ -15,6 +15,7 @@
         - URL_Task: Task level Variable
         - Age: 20
 
-
+  roles:
+    - demo
 #Play level variables cane be accessed by all the tasks and roles
 #Task level can be accessed only at task level
