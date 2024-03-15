@@ -1,5 +1,5 @@
 - name: demo of vars
-  host: localhost
+  hosts: localhost
   vars:
     - URL_Play: play.example.com
     - Age: 18
