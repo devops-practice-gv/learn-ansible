@@ -1,0 +1,10 @@
+- name: demo of vars
+  host: localhost
+  vars:
+    - URL_Play: play.example.com
+    - Age: 18
+
+  tasks:
+    - name: Print Name
+      ansible,builtin.debug:
+        msg: URL is {{ URL_Play }}
