@@ -1,0 +1,5 @@
+- name: demo on facts
+  hosts: localhost
+  tasks:
+    - name: print hostname using facts
+      msg: Hostname - {{ ansible_hostname }}
