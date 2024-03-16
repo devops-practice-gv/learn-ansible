@@ -12,7 +12,7 @@
 
     - name: Print fruits
       ansible.builtin.debug:
-        msg: Fruit name - {{ item }}
+        msg: Fruit name - {{ item.name }} - Item quantity {{ item.quantity }}
       loop:
         - { name: apple , quantuty: 10 }
         - { name: lichi , quantuty: 40 }
