@@ -9,3 +9,11 @@
         - apple
         - lichi
         - mango
+
+    - name: Print fruits
+      ansible.builtin.debug:
+        msg: Fruit name - {{ item }}
+      loop:
+        - { name: apple , quantuty: 10 }
+        - { name: lichi , quantuty: 40 }
+        - { name: mango , quantuty: 80 }
