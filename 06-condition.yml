@@ -4,9 +4,9 @@
     - name: Print Vegetables
       ansible.builtin.debug:
         msg: Vegetables
-      when: type==Vegetables
+      when: type=="Vegetables"
 
     - name: Print fruits
       ansible.builtin.debug:
         msg: Fruits
-      when: type==Fruits
+      when: type=="Fruits"
