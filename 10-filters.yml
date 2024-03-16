@@ -1,0 +1,9 @@
+- name: demo of ansible filters
+  hosts: localhost
+  task:
+    - name: Print
+      ansible.builtin.debug:
+        msg: yes we need to install
+      when: install | bool
+
+#      You can use may conditions in the WHEN statement
