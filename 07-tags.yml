@@ -1,4 +1,4 @@
-- name: Demo on conditions
+- name: Demo on Tags
   hosts: localhost
   tasks:
     - name: Print Vegetables
