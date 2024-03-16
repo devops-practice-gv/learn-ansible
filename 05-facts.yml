@@ -4,3 +4,5 @@
     - name: print hostname using facts
       ansible.builtin.debug:
         msg: Hostname - {{ ansible_hostname }}
+
+#Generates host info as variables and can be used in the plays

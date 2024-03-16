@@ -15,6 +15,16 @@
       vars:
         - URL_Task: Task level Variable
         - Age: 20
+#    Store the results of a task to an output file
+    - name: Demo of output file
+      ansible.builtin.shell: uptime
+      register: output
+
+#      Retreive the output file
+    - name: Print the output the file
+      ansible.builtin.debug:
+        msg: "{{ output }}"
+
 
   roles:
     - demo
