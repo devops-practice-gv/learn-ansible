@@ -6,4 +6,4 @@
         msg: yes we need to install
       when: install | bool
 
-#      You can use may conditions in the WHEN statement
+#      You can use may conditions in the WHEN statement. use the "bool" to define that the install variable is a boolean
