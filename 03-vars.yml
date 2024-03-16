@@ -25,6 +25,11 @@
       ansible.builtin.debug:
         msg: "{{ output }}"
 
+#      Retreive the output file using JSON query
+    - name: Print the output the previous WITHOUT shell command
+      ansible.builtin.debug:
+        msg: "{{ output.stdout }}"
+
 
   roles:
     - demo
