@@ -20,3 +20,10 @@
     - demo
 #Play level variables cane be accessed by all the tasks and roles
 #Task level can be accessed only at task level
+#CLI variable is the highest priority
+#Role level variables is accessible in the role>tasks
+
+#Imp: if the value of any key is a variable then double quote it
+#eg: msg: {{ URL }}... this needs to be given as "{{ URL }}" .
+#  This is not required if the msg starts with a string and then you give a variable,
+#           as done in this file above
